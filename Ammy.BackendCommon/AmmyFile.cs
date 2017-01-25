@@ -2,8 +2,8 @@ namespace Ammy.BackendCommon
 {
     public class AmmyFile
     {
-        string Filename { get; }
-        string Xaml { get; }
+        public string Filename { get; }
+        public string Xaml { get; }
 
         public AmmyFile(string filename, string xaml)
         {

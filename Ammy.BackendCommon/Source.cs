@@ -7,7 +7,6 @@
 
     public class FileSource : Source
     {
-
         public FileSource(string path)
         {
             Path = path;

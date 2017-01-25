@@ -2,10 +2,10 @@
 {
     public class CompilationResult
     {
-        string ProjectName { get; }
-        bool IsSuccess { get; }
-        CompilerMessage[] CompilerMessages { get; }
-        AmmyFile[] Files { get; }
+        public string ProjectName { get; }
+        public bool IsSuccess { get; }
+        public CompilerMessage[] CompilerMessages { get; }
+        public AmmyFile[] Files { get; }
 
         public CompilationResult(string projectName, bool isSuccess, CompilerMessage[] compilerMessages, AmmyFile[] files)
         {
