@@ -2,12 +2,12 @@ namespace Ammy.BackendCommon
 {
     public class OutputFile
     {
-        public string Filename { get; }
+        public string FullPath { get; }
         public string Xaml { get; }
 
-        public OutputFile(string filename, string xaml)
+        public OutputFile(string fullPath, string xaml)
         {
-            Filename = filename;
+            FullPath = fullPath;
             Xaml = xaml;
         }
     }
