@@ -5,9 +5,9 @@
         public string ProjectName { get; }
         public bool IsSuccess { get; }
         public CompilerMessage[] CompilerMessages { get; }
-        public AmmyFile[] Files { get; }
+        public OutputFile[] Files { get; }
 
-        public CompilationResult(string projectName, bool isSuccess, CompilerMessage[] compilerMessages, AmmyFile[] files)
+        public CompilationResult(string projectName, bool isSuccess, CompilerMessage[] compilerMessages, OutputFile[] files)
         {
             ProjectName = projectName;
             IsSuccess = isSuccess;

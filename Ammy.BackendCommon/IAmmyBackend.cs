@@ -8,13 +8,16 @@ namespace Ammy.BackendCommon
 {
     public interface IAmmyBackend
     {
+        /// <summary>
+        /// This property will be initialized in Host.Initialize() call
+        /// </summary>
+        IAmmyCompiler Compiler { get; set; }
+
         string[] DefaultNamespaces { get; }
         bool NeedRuntimeUpdate { get; }
         TypeNames TypeNames { get; }
 
+
         Type[] ProvideTypes();
-        void CompilationFinished(CompilationResult result);
-        
-        event EventHandler<CompilationRequest> CompilationRequested;
     }
 }

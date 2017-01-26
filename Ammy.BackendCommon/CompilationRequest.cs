@@ -6,6 +6,7 @@
         public string[] ReferenceAssemblyPaths { get; }
         public Source[] Sources { get; }
         public bool NeedTypeReloading { get; }
+        public object Data { get; set; }
 
         public CompilationRequest(Source[] sources, bool needTypeReloading = false, string projectDir = "", string[] referenceAssemblyPaths = null)
         {
@@ -13,6 +14,6 @@
             ProjectDir = projectDir;
             ReferenceAssemblyPaths = referenceAssemblyPaths ?? new string[0];
             Sources = sources;
-        }
+        }    
     }
 }
