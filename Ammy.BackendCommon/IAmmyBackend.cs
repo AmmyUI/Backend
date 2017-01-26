@@ -15,8 +15,7 @@ namespace Ammy.BackendCommon
 
         string[] DefaultNamespaces { get; }
         bool NeedRuntimeUpdate { get; }
-        TypeNames TypeNames { get; }
-
+        PlatformTypeNames PlatformTypeNames { get; }
 
         Type[] ProvideTypes();
     }

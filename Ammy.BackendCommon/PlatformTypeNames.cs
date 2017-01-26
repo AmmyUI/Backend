@@ -1,6 +1,6 @@
 namespace Ammy.BackendCommon
 {
-    public class TypeNames
+    public class PlatformTypeNames
     {
         public virtual string Void    => "System.Void";
         public virtual string Type    => "System.Type";
@@ -41,5 +41,6 @@ namespace Ammy.BackendCommon
         public virtual string ResourceDictionary => "System.Windows.ResourceDictionary";
         public virtual string FrameworkElement   => "System.Windows.FrameworkElement";
         public virtual string DependencyProperty => "System.Windows.DependencyProperty";
+        public virtual string RoutedEvent        => "System.Windows.RoutedEvent";
     }
 }
